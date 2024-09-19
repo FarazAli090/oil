@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c2159d4724.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <div class="main1">
+                <div class="right">
+                    <div id="img">
+                        <img src="images/logo-light.png" alt="image">
+                    </div>
+                    <div id="input">
+                        <input type="text" name="search" placeholder="Find Classes">
+                        <img src="images/search.png" alt="search">
+                        <!-- <div id="search">
+                        <img src="images/search.png" alt="search">
+                    </div> -->
+                    </div>
+
+
+
+                </div>
+                <div class="left">
+                    <p id="am">I'm a</p>
+                    <div class="yeees">
+                        <div id="btn5"><a id="aClick" class="link-1" id="m1-c" onclick="toggle()">Teacher</a></div>
+                        <div id="btn5"><a id="bClick" class="link-1" id="m1-c" onclick="toggle()">Leraner</a></div>
+
+                        <!-- modal 1 -->
+                        <div class="box">
+                            <!-- <a href="#m1-c" class="link-2"></a>    -->
+                            <div class="modal-container" id="modalPage" class="" style="--m-background: transparent;">
+
+                                <div class="modal">
+
+                                    <div class="container">
+
+                                        <form action="">
+                                            <button id="btn-close" class="btn-close" onclick="toggle()">&times;</button>
+                                            <h1>Teacher Register </h1>
+                                            <div class="form-group">
+                                                <label for="">Name</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Last Name</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Email id</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Phone Number</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Password</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Confirm Password</label>
+                                                <input type="password" class="form-control" required>
+                                                <input type="submit" class="btn" value="Submit">
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <!-- <a href="#m1-c" class="link-2"></a>    -->
+                            <div class="modal-container" id="studentPage" class="" style="--m-background: transparent;">
+
+                                <div class="modal">
+
+                                    <div class="container">
+
+                                        <form action="">
+                                            <button id="btn-closes" class="btn-close"
+                                                onclick="toggle()">&times;</button>
+                                            <h1>Learner Register </h1>
+                                            <div class="form-group">
+                                                <label for="">Name</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Last Name</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Email id</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <!-- <div class="form-group">
+                <label for="">Phone Number</label>
+                <input type="text" class="form-control" required>
+              </div> -->
+                                            <div class="form-group">
+                                                <label for="">Password</label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="">Address</label>
+                                                <input type="password" class="form-control" required>
+
+                                            </div>
+                                            <div id="courses">Courses Selection</div>
+                                            <div class="group" style="display:flex;">
+                                                <div class="form1-group">
+                                                    <label for="">Quran Learning</label>
+                                                    <input type="checkbox" class="form1-control" value="web">
+                                                </div>
+                                                <div class="form2-group">
+                                                    <label for="">Web Development</label>
+                                                    <input type="checkbox" class="form1-control" value="mobile">
+                                                </div>
+                                            </div>
+                                            <div class="group" style="display: flex;">
+                                                <div class="form3-group">
+                                                    <label for="">Mobile Development</label>
+                                                    <input type="checkbox" class="form1-control" value="Intelligence">
+                                                </div>
+                                                <div class="form4-group">
+                                                    <label for="">Artificial Inte</label>
+                                                    <input type="checkbox" class="form1-control" value="Quran">
+
+                                                </div>
+                                                <div id="submit-btn">
+                                                    <input type="submit" class="btn" value="Submit">
+                                                </div>
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- /modal 1 -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blur">
+        <div class="main2">
+            <div class="carousel">
+                <ul class="slides">
+                    <input type="radio" name="radio-buttons" id="img-1" checked />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img src="images/1755.jpg">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-3" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-2" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-2" />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img src="images/1755.jpg">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-1" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-3" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-3" />
+                    <li class="slide-container">
+                        <div class="slide-image">
+                            <img src="images/1755.jpg">
+                        </div>
+                        <div class="carousel-controls">
+                            <label for="img-2" class="prev-slide">
+                                <span>&lsaquo;</span>
+                            </label>
+                            <label for="img-1" class="next-slide">
+                                <span>&rsaquo;</span>
+                            </label>
+                        </div>
+                    </li>
+                    <div class="carousel-dots">
+                        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="main3">
+            <div id="trending">
+                <h2>Trending Course</h2>
+                <div class="line"></div>
+            </div>
+
+        </div>
+        <div class="main4">
+            <div class="clas1">
+                <div class="software">
+                    <img src="images/webd.jpg">
+                </div>
+                <div id="web">
+                    <h4 id="web1">Web Development</h4>
+                    <p id="ali">Ali Ahmed</p>
+                </div>
+                <div class="flex">
+                    <div class="click">
+                        <button>Click on</button>
+                    </div>
+                    <div id="info">
+                        <h4>More info</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="clas1">
+                <div class="software">
+                    <img src="images/mobile.jpg">
+                </div>
+                <div id="web">
+                    <h4 id="web1">Mobile Development</h4>
+                    <p id="ali">Ali Ahmed</p>
+                </div>
+                <div class="flex">
+                    <div class="click">
+                        <button>Click on</button>
+                    </div>
+                    <div id="info">
+                        <h4>More info</h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clas1">
+                <div class="software">
+                    <img src="images/artificial.jpg">
+                </div>
+                <div id="web">
+                    <h4 id="web1">Artificial Intelligence</h4>
+                    <p id="ali">Ali Ahmed</p>
+                </div>
+                <div class="flex">
+                    <div class="click">
+                        <button>Click on</button>
+                    </div>
+                    <div id="info">
+                        <h4>More info</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="clas1">
+                <div class="software">
+                    <img src="images/quran.jpg">
+                </div>
+                <div id="web">
+                    <h4 id="web1">Quran Learning</h4>
+                    <p id="ali">Ali Ahmed</p>
+                </div>
+                <div class="flex">
+                    <div class="click">
+                        <button>Click on</button>
+                    </div>
+                    <div id="info">
+                        <h4>More info</h4>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="main3">
+            <!-- <img src="images/extention1.png" alt="extention1" width="100%" height="450px"> -->
+            <div id="trending">
+                <h2>Performance Learning</h2>
+                <div class="line"></div>
+            </div>
+            <div class="main5">
+
+                <div id="out1">
+                    <div id="rcorners1">
+                        <div id="num" style="margin-left: 32px; margin-top: -5px;">1</div>
+                    </div>
+                </div>
+                <div class="dotted">------</div>
+
+
+                <div id="out2">
+                    <div id="rcorners2">
+                        <div id="num" style="margin-left: 24px; margin-top: -7px;">2</div>
+                    </div>
+                </div>
+                <div class="dotted">------</div>
+                <div id="out3">
+                    <div id="rcorners3">
+                        <div id="num" style="margin-top: -3; margin-left: 26px;">3</div>
+                    </div>
+                </div>
+                <div class="dotted">------</div>
+                <div id="out4">
+                    <div id="rcorners4">
+                        <div id="num" style="margin-left: 22px; margin-top: -4px;">4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="display2">
+                <button id="btn1" style="margin-left: 12.4%   ;">Begginer</button>
+                <button id="btn2" style="margin-left: 13%;">Intermediate</button>
+                <button id="btn3" style="margin-left: 14.5%;">Expert</button>
+                <button id="btn4" style="margin-left: 15%;">Master</button>
+            </div>
+        </div>
+        <!-- <div class="slidepic"><img src="images/slider.png" alt="sl"></div> -->
+    </div>
+    <div class="main3">
+        <div id="trending">
+            <h2>Performance Learning</h2>
+            <div class="line"></div>
+        </div>
+
+        <div class="main4">
+            <div class="clas1">
+                <div class="software">
+                    <img src="images/App-development-process.jpg">
+                </div>
+                <div id="web">
+                    <h4 id="web1">Mobile App Development(STD 5-7)</h4>
+                    <p id="ali">Ali Ahmed</p>
+                </div>
+                <div class="flex">
+                    <div class="click">
+                        <button>Click on</button>
+                    </div>
+                    <div id="info">
+                        <h4>More info</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="clas1">
+                <div class="software">
+                    <img src="images/public speaking.png">
+                </div>
+                <div id="web">
+                    <h4 id="web1">Public Speaking</h4>
+                    <p id="ali">Ali Ahmed</p>
+                </div>
+                <div class="flex">
+                    <div class="click">
+                        <button>Click on</button>
+                    </div>
+                    <div id="info">
+                        <h4>More info</h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clas1">
+                <div class="software">
+                    <img src="images/coding.jpg">
+                </div>
+                <div id="web">
+                    <h4 id="web1">Coding Designing & Animation</h4>
+                    <p id="ali">Ali Ahmed</p>
+                </div>
+                <div class="flex">
+                    <div class="click">
+                        <button>Click on</button>
+                    </div>
+                    <div id="info">
+                        <h4>More info</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="clas1">
+                <div class="software">
+                    <img src="images/quran.jpg">
+                </div>
+                <div id="web">
+                    <h4 id="web1">Quran Learning</h4>
+                    <p id="ali">Ali Ahmed</p>
+                </div>
+                <div class="flex">
+                    <div class="click">
+                        <button>Click on</button>
+                    </div>
+                    <div id="info">
+                        <h4>More info</h4>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="main3">
+            <div id="trending">
+                <h2>Top 1% of educators</h2>
+                <div id="line"></div>
+            </div>
+            <div class="main6">
+                <div class="img" id="img1">
+                    <img src="images/gm sir.jpg" alt="gm" width="250px" height="400px">
+                    <div class="settext">
+                        <p> Asiansol</p>
+                        <div id="line2"></div>
+                        Development
+                    </div>
+                </div>
+                <div class="img" id="img1">
+                    <img src="images/gm sir.jpg" alt="gm" width="250px" height="400px">
+                    <div class="settext">
+                        <p>Asiansol</p>
+                        <div id="line2"></div>
+                        Development
+                    </div>
+                </div>
+                <div class="img" id="img1">
+                    <img src="images/gm sir.jpg" alt="gm" width="250px" height="400px">
+                    <div class="settext">
+                        <p>Asiansol</p>
+                        <div id="line2"></div>
+                        Development
+                    </div>
+                </div>
+                <div class="img" id="img1">
+                    <img src="images/gm sir.jpg" alt="gm" width="250px" height="400px">
+                    <div class="settext">
+                        <p>Asiansol</p>
+                        <div id="line2"></div>
+                        Development
+                    </div>
+                </div>
+                <div class="img" id="img1">
+                    <img src="images/gm sir.jpg" alt="gm" width="250px" height="400px">
+                    <div class="settext">
+                        <p> Asiansol</p>
+                        <div id="line2"></div>
+                        Development
+
+                    </div>
+                </div>
+                <!-- <div id="img6"><p> Waqas </p></div> -->
+            </div>
+            <div class="main3">
+                <div id="trending">
+                    <h2>Evergreen Courses
+                    </h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="main4">
+                    <div class="clas1">
+                        <div class="software">
+                            <img src="images/webd.jpg">
+                        </div>
+                        <div id="web">
+                            <h4 id="web1">Public Speaking</h4>
+                            <p id="ali">Ali Ahmed</p>
+                        </div>
+                        <div class="flex">
+                            <div class="click">
+                                <button>Click on</button>
+                            </div>
+                            <div id="info">
+                                <h4>More info</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clas1">
+                        <div class="software">
+                            <img src="images/public speaking.png">
+                        </div>
+                        <div id="web">
+                            <h4 id="web1">Learn Python Coding(std 6-10)</h4>
+                            <p id="ali">Ali Ahmed</p>
+                        </div>
+                        <div class="flex">
+                            <div class="click">
+                                <button>Click on</button>
+                            </div>
+                            <div id="info">
+                                <h4>More info</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clas1">
+                        <div class="software">
+                            <img src="images/coding.jpg">
+                        </div>
+                        <div id="web">
+                            <h4 id="web1">Coding Designing & Animation</h4>
+                            <p id="ali">Ali Ahmed</p>
+                        </div>
+                        <div class="flex">
+                            <div class="click">
+                                <button>Click on</button>
+                            </div>
+                            <div id="info">
+                                <h4>More info</h4>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="clas1">
+                        <div class="software">
+                            <img src="images/vedic.jpg">
+                        </div>
+                        <div id="web">
+                            <h4 id="web1">Introduction to Vedic Maths</h4>
+                            <p id="ali">Ali Ahmed</p>
+                        </div>
+                        <div class="flex">
+                            <div class="click">
+                                <button>Click on</button>
+                            </div>
+                            <div id="info">
+                                <h4>More info</h4>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div id="trending">
+                    <h2>OLL's Skill Catalog</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="main7">
+                    <div class="diplay3">
+                        <div class="function">
+                            <div class="width">
+                                <div class="artflex">
+                                    <div id="art"><img src="images/art.png" alt="art" width="55px"></div>
+                                    <div id="craft">Art & Craft </div>
+                                </div>
+                                <div class="diplay4">
+                                    <div class="tag" id="tag1"> <a href="">Calligraphy</a></div>
+                                    <div class="tag" id="tag2"><a href="">Craft</a></div>
+                                    <div class="tag" id="tag3"><a href="">Drawing</a></div>
+                                    <div class="tag" id="tag4"><a href="">Painting</a></div>
+                                    <div class="tag" id="tag5"><a href="">Sketching</a></div>
+                                    <div class="tag" id="tag6"><a href="">Traditional</a></div>
+                                </div>
+                            </div>
+                            <div class="artflex">
+                                <div id="art"><img src="images/digital.PNG" alt="digital" width="55px"></div>
+                                <div id="craft">Digital Arts </div>
+                            </div>
+
+                            <div class="diplay4">
+                                <div class="tag"><a href="">Animation</a></div>
+                                <div class="tag"><a href="">Design thinking</a></div>
+                                <div class="tag"><a href="">Graphic Designing</a></div>
+                                <div class="tag"><a href="">NFT</a></div>
+                                <div class="tag"><a href="">Photography</a></div>
+                            </div>
+                            <div class="disp">
+                                <div class="anker"><a href="">UX UI designing</a></div>
+                                <div class="anker"><a href="">Video Editing</a></div>
+                            </div>
+                            <div class="artflex">
+                                <div id="art"><img src="images/life skills.PNG" alt="life" width="55px"></div>
+                                <div id="craft">Life Skills </div>
+                            </div>
+
+                            <div class="diplay4">
+                                <div class="tag"><a href="">Communication</a></div>
+                                <div class="tag"><a href="">Cooking</a></div>
+                                <div class="tag"><a href="">Critical Thinking</a></div>
+                                <div class="tag"><a href="">Enterpreneurship</a></div>
+                                <div class="tag"><a href="">Finance</a></div>
+                            </div>
+                            <div class="disp">
+                                <div class="anker"><a href="">Personality Development</a></div>
+                                <div class="anker"><a href="">Presentation</a></div>
+                                <div class="anker"><a href="">Sports</a></div>
+                            </div>
+                            <div class="artflex">
+                                <div id="art"><img src="images/perfoming arts.PNG" alt="perfoming" width="55px"></div>
+                                <div id="craft">Perfoming Arts </div>
+                            </div>
+                            <div class="diplay4">
+                                <div class="tag" id="tag1"> <a href="">Acting</a></div>
+                                <div class="tag" id="tag2"><a href="">Dance</a></div>
+                                <div class="tag" id="tag3"><a href="">Fun</a></div>
+                                <div class="tag" id="tag4"><a href="">Instruments</a></div>
+                                <div class="tag" id="tag5"><a href="">Music</a></div>
+                                <div class="tag" id="tag6"><a href="">Singing</a></div>
+                            </div>
+
+                        </div>
+                        <div class="function2">
+                            <div class="width2">
+                                <div class="artflex1">
+                                    <div id="art1"><img src="images/brain.PNG" alt="brain" width="55px"></div>
+                                    <div id="craft1">Coding and Technology</div>
+                                </div>
+                                <div class="diplay5">
+                                    <div class="tag1" id="tag2"><a href="">Advanced</a></div>
+                                    <div class="tag1" id="tag3"><a href="">App Development</a></div>
+                                    <div class="tag1" id="tag4"><a href="">Basics</a></div>
+                                    <div class="tag1" id="tag5"><a href="">Blockchain</a></div>
+                                    <div class="tag1" id="tag6"><a href="">More...</a></div>
+                                </div>
+
+                                <div class="disp1">
+                                    <div class="anker1"><a href="">Programing</a></div>
+                                    <div class="anker1"><a href="">Web Development</a></div>
+                                </div>
+                            </div>
+                            <div class="artflex1">
+                                <div id="art1"><img src="images/book.PNG" alt="book" width="55px"></div>
+                                <div id="craft1">English </div>
+                            </div>
+
+                            <div class="diplay5">
+                                <div class="tag1"> <a href="">Advanced</a></div>
+                                <div class="tag1"><a href="">Foundations</a></div>
+                                <div class="tag1"><a href="">Handwriting</a></div>
+                                <div class="tag1"><a href="">Reading</a></div>
+                                <div class="tag1"><a href="">Speaking</a></div>
+                                <div class="tag1"><a href="">Writing</a></div>
+                            </div>
+
+                            <div class="artflex1">
+                                <div id="art1"><img src="images/math.PNG" alt="math" width="50px"></div>
+                                <div id="craft1">Math & Science </div>
+                            </div>
+
+                            <div class="diplay5">
+                                <div class="tag1"> <a href="">Academic</a></div>
+                                <div class="tag1"><a href="">Advanced</a></div>
+                                <div class="tag1"><a href="">Concept Clarity</a></div>
+                                <div class="tag1"><a href="">Olympaid</a></div>
+                                <div class="tag1"><a href="">Science</a></div>
+
+                            </div>
+                            <div class="disp1">
+                                <div class="anker1"><a href="">Vedic Maths</a></div>
+
+                            </div>
+                            <div class="artflex1">
+                                <div id="art1"><img src="images/world.PNG" alt="perfoming" width="55px"></div>
+                                <div id="craft1">World Languages </div>
+                            </div>
+
+                            <div class="diplay5">
+                                <div class="tag1"> <a href="">Chinese</a></div>
+                                <div class="tag1"> <a href="">Cultures</a></div>
+                                <div class="tag1"><a href="">French</a></div>
+                                <div class="tag1"><a href="">German</a></div>
+                                <div class="tag1"><a href="">Italian</a></div>
+                                <div class="tag1"><a href="">Japanese</a></div>
+                                <div class="tag1"><a href="">Korean </a></div>
+                            </div>
+                            <div class="disp1">
+                                <div class="anker1"><a href="">More...</a></div>
+                                <div class="anker1"><a href="">Sign Language</a></div>
+                                <div class="anker1"><a href="">Spanish</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="trending">
+                    <h2>Why Asian Solution?</h2>
+                    <div class="line"></div>
+                </div>
+                <div class="main8">
+                    <div class="icon">
+
+                        <div class="ageskills">
+                            <img src="images/new1.jpg" alt="age">
+
+                        </div>
+
+                        <div class="ageskills1">
+                            <img src="images/unesco.jpg" alt="age">
+
+                        </div>
+
+                        <div class="ageskills2">
+                            <img src="images/friendly.jpg" alt="age">
+
+                        </div>
+
+                    </div>
+                    <div class="icon2">
+                        <div id="iconimg"><img src="images/id name.png" alt="id"></div>
+                        <div id="icon1img"><img src="images/id name.png" alt="id" style="margin-left: 24lpx;"></div>
+                        <div id="icon2img"><img src="images/id name.png" alt="id"></div>
+                    </div>
+                    <div class="newage">
+                        <h5 id="text1">New Age Skills</h5>
+                        <h5 id="text2">Certified by Stem & UNSECO</h5>
+                        <h5 id="text3">Pocket Friendly</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main9">
+                <div class="trending1">
+                    <div id="trending2">
+                        <h2>Hear from Learners</h2>
+                        <div id="line1"></div>
+                        <p id="knowledge">At Asian Solution, we're always cooking up something <br> exciting for our
+                            customers! We work day and <br> night to make sure your
+                            experience with us is <br> nothing short of amazing. And the best
+                            way for <br> us to know we're doing a good job is through <br> your
+                            reviews and feedback.
+                        </p>
+                        <button id="button-71"> Learn with Asian Solution </button>
+                    </div>
+                </div>
+                <div class="diplay6">
+                    <div class="imgradius">
+                        <div id="imgradius1"><img src="images/baby1.jpg" alt="baby1"></div>
+                        <img src="images/baby2.jpg" alt="baby2">
+                        <img src="images/baby3.jpg" alt="baby3">
+                        <img src="images/baby4.jpg" alt="baby4">
+                    </div>
+                    <div class="diplay7">
+                        <div class="content">
+                            <h3>Aprit Mishra</h3>
+                            <p>As I am a tech enthusiast, I found the sessions <br>
+                                really helpful. Our educator was also very nice. He <br>
+                                explained each and everything very nicely and <br>
+                                practically, and I Loved the course and OLL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="trending">
+                <h2>What's more at Asian Solution</h2>
+                <div class="line"></div>
+            </div>
+            <div class="main10">
+                <div class="diplay8">
+                    <div class="diplay9"><img src="images/gathring.jpg" alt="gathring">
+                        <h3>Asian Solution Learners Community </h3>
+                        <p>Asian is a collaborative community <br>
+                            where learners come together to <br>
+                            share their knowledge and interests
+                        </p>
+                        <button id="color">Become a Learner</button>
+                    </div>
+
+                </div>
+                <div class="diplay10">
+                    <div class="diplay11"><img src="images/experience.jpg" alt="experience">
+                        <h3>Share your expertise</h3>
+                        <p>Share your knowledge and expertise <br>
+                            with those who are interested in <br>
+                            learning and are open to new ideas.
+                        </p>
+                        <button id="color">Become a Educator</button>
+                    </div>
+
+                </div>
+                <div class="diplay12">
+                    <div class="diplay13"><img src="images/opperunities.jpg" alt="opperunities">
+                        <h3>Opportunities at OLL</h3>
+                        <p>Let's work together to foster a <br>
+                            positive and effective learning <br>
+                            experience, and let OLL be a <br>
+                            valuable component of your career.
+
+
+                        </p>
+                        <button id="color">Join the Team</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="main11">
+                <div class="diplay14">
+                    <div class="diplay15"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <div class="diplay16">
+                        <h2>“Forming a Bond like no other, between Learner and Educator”
+                        </h2>
+                    </div>
+                </div>
+                <div class="diplay17">
+                    <div class="diplay18">
+                        <h3>About Asian Solution</h3>
+                        <a href="">About Us</a>
+                        <a href="">Contact Us</a>
+                        <a href="">Blogs</a>
+                        <a href="">Sitemap</a>
+                    </div>
+                    <div class="diplay18">
+                        <h3>Learn</h3>
+                        <a href="">Explore All Classes</a>
+                        <a href="">Offline Courses</a>
+                        <a href="">Free Courses</a>
+                        <a href="">Sales Funnel</a>
+                    </div>
+                    <div class="diplay18">
+                        <h3>Educate</h3>
+                        <a href="">Apply Now</a>
+                        <a href="">Educator Policy</a>
+                    </div>
+                    <div class="diplay18">
+                        <h3>Support</h3>
+                        <a href="">Help</a>
+                        <a href="">Learner Privacy & Safety</a>
+                        <a href="">Blogs</a>
+                    </div>
+
+                </div>
+                <div class="diplay19">
+
+                    <div class="diplay20"><img src="images/logo-light.png" alt="id name"></div>
+                    <div class="diplay21">
+                        <h2>ONLINE LIVE</h2>
+                        <p>LEARNING</p>
+                    </div>
+
+                </div>
+                <div class="diplay22">
+                    <div class="diplay23">
+                        <div id="image"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div id="image"><i class="fa-brands fa-instagram"></i></div>
+                        <div id="image"><i class="fa-brands fa-facebook"></i></div>
+                        <div id="image"><i class="fa-brands fa-twitter"></i></div>
+                        <div id="image"><i class="fa-brands fa-youtube"></i></div>
+                    </div>
+                    <div class="diplay24">
+                        <p>Copyright © 2023 Clone Futura Live Solutions Private Ltd</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var closebtns = document.getElementById("btn-close");
+        const aClick = document.getElementById("aClick");
+        const modalPage = document.getElementById("modalPage");
+        var closebtn = document.getElementById("btn-closes");
+        const bClick = document.getElementById("bClick");
+        const studentPage = document.getElementById("studentPage");
+
+
+        closebtns.addEventListener("click", function () {
+            modalPage.style.display = 'none';
+        });
+
+        aClick.addEventListener("click", function () {
+            modalPage.style.display = 'block';
+        });
+
+        closebtn.addEventListener("click", function () {
+            studentPage.style.display = 'none';
+        });
+
+        bClick.addEventListener("click", function () {
+            studentPage.style.display = 'block';
+        });
+        function toggle() {
+            var blur = document.getElementById("blur");
+            blur.classList.toggle("active")
+        }
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
